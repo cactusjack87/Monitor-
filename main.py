@@ -3,8 +3,10 @@ from bs4 import BeautifulSoup
 import time
 from datetime import datetime
 
-TELEGRAM_TOKEN = "9011746327:AAHIuEWtciAoax1WPu40ELLSgsCXvAgEnuw"
-CHAT_ID = "8651373539"
+import os
+
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 URL = "https://shop.travisscott.com/"
 HEADERS = {
